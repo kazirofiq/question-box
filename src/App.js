@@ -32,6 +32,9 @@ function App() {
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*', element: <div>This Page not Found</div>
     }
   ])
   return (
