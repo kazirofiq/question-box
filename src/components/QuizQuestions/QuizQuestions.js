@@ -4,7 +4,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 
 const QuizQuestions = ({post}) => {
-    const [open, setOpen] = useState(false);
+   
     const {options,question,id, correctAnswer} = post 
     console.log(post)
     

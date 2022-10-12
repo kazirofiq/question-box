@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QuizQuestions from '../QuizQuestions/QuizQuestions';
-import { BeakerIcon } from '@heroicons/react/24/solid'
+
 
 const QuizDetails = () => {
     const posts = useLoaderData();
