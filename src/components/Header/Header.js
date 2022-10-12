@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = ({fixed}) => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -30,30 +31,31 @@ export const Header = ({fixed}) => {
                             
                             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                                     <li className="nav-item">
-                                        <a href="/"
+                                        <Link to="/home"
                                         className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                                         
                                         >
                                         <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Home</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="/statics"
+                                        <Link to="/statics"
                                         className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                                         
                                         
                                         >
                                         <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Static</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="/blog"
+                                        <Link to="/blog"
                                         className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                                         
                                         >
                                         <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Blog</span>
-                                        </a>
+                                        </Link>
                                     </li>
+                                    
                             </ul>
                       
                 </div>
