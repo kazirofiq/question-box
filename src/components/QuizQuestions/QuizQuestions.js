@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Option from '../Opton/Option';
-import { XMarkIcon, EyeIcon } from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid'
 
 
 const QuizQuestions = ({post}) => {
     const [open, setOpen] = useState(false);
     const {options,question,id} = post 
     console.log(post)
+    
     return (
         <div className='container mx-auto bg-slate-300 m-8 rounded-2xl'>
             <div className='flex justify-end p-8'>
