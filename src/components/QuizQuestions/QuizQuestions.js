@@ -5,7 +5,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 const QuizQuestions = ({post}) => {
     const [open, setOpen] = useState(false);
-    const {options,question,id} = post 
+    const {options,question,id, correctAnswer} = post 
     console.log(post)
     
     return (
@@ -40,6 +40,7 @@ const QuizQuestions = ({post}) => {
                 key={option.id}
                 option={option}
                 id={id}
+                correctAnswer={correctAnswer}
                 ></Option>)
             }
             </div>
