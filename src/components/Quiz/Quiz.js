@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { BeakerIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 
 const Quiz = ({quiz}) => {
@@ -16,7 +17,7 @@ const Quiz = ({quiz}) => {
             <img src={logo}  alt="" />
             <div className='flex justify-between gap-4 bg-white p-4' >
             <h3>{name}</h3>
-            <button onClick={handleQuiz}  className='text-2xl bg-blue-600 p-1 '>Quiz Practice</button>
+            <button onClick={handleQuiz}  className='text-2xl bg-blue-600 p-1 flex items-center gap-4 rounded-2xl text-white'> <span>Quiz Practice</span>  <ChevronRightIcon className="h-6 w-6 text-white"/></button>
             </div>
         </div>
     );

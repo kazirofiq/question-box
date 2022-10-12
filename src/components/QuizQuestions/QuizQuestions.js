@@ -19,7 +19,7 @@ const QuizQuestions = ({post}) => {
                   
                 
             
-            <label for="my-modal-3" class="btn modal-button"> <EyeIcon className="h-6 w-6 text-blue-500  "/> </label>
+            <label for="my-modal-3" class="btn modal-button"> <EyeIcon className="h-6 w-6 text-blue-300  "/> </label>
 
 
                 <input type="checkbox" id="my-modal-3" class="modal-toggle" />
